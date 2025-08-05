@@ -1,22 +1,22 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import './App.css'
 import Home from './home/home.tsx'
 
 export default function App() {
-  const [currentPage, setPage] = useState('Home')
+  // const [currentPage, setPage] = useState('Home')
 
 
-  function showPage(){
-    if (currentPage === "Home") {
-      // return(<Home changeToPage={setPage}/>)
-      return(<Home/>)
-    } else {
-      // return(<Stock />)
-    }
-  }
+  // function showPage(){
+  //   if (currentPage === "Home") {
+  //     // return(<Home changeToPage={setPage}/>)
+  //     return(<Home/>)
+  //   } else {
+  //     // return(<Stock />)
+  //   }
+  // }
   return(
     <>
-    {showPage()}
+     <Home/>
     </>
   );
 }

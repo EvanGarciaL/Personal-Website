@@ -12,16 +12,24 @@ function Header() {
 			<h2>Evan Garcia</h2>
 			<nav>
 				<button style={{ marginLeft: "0" }}>
-					<img src={homeIcon} alt="home" />
+					<a href="">
+						<img src={homeIcon} alt="home" />
+					</a>
 				</button>
 				<button>
-					<img src={mailIcon} alt="mail" />
+					<a href="">
+						<img src={mailIcon} alt="mail" />
+					</a>
 				</button>
 				<button>
-					<img src={linkedinIcon} alt="linkedin" />
+					<a href="https://www.linkedin.com/in/evangarcialopez/">
+						<img src={linkedinIcon} alt="linkedin" />
+					</a>
 				</button>
 				<button>
-					<img src={githubIcon} alt="github" />
+					<a href="https://github.com/EvanGarciaL">
+						<img src={githubIcon} alt="github" />
+					</a>
 				</button>
 			</nav>
 		</div>
@@ -61,11 +69,12 @@ function Intro() {
 function Footer() {
 	return (
 		<footer className="footer">
-			<p>Icons by {" "}
-        <a target="_blank" href="https://icons8.com/">
-          Icons8
-        </a>
-      </p> 
+			<p>
+				Icons by{" "}
+				<a target="_blank" href="https://icons8.com/">
+					Icons8
+				</a>
+			</p>
 		</footer>
 	);
 }
