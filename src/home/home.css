@@ -105,6 +105,89 @@
 .footer a:hover{
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 900px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100vh;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .Home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  .rootEnd {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  .header {
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15% 0 1% 0;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  .header nav {
+    padding-left: 0.3rem;
+  }
+  .header nav button {
+    margin: 0 0.5rem;
+  }
+  .content {
+    padding: 0 10%;
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainText {
+    padding: 0 3% 0 7%;
+  }
+  .mainText h2 {
+    font-size : 1.3rem;
+    text-align: left;
+    padding-bottom: 0.7rem;
+  }
+  .mainText p {
+    font-size: 0.78rem;
+    padding-bottom: 0.6rem;
+    text-align: left;
+  }
+  .footer {
+    height: 23vh;
+    display: flex;
+    padding-top: 3rem; 
+    overflow: hidden;
+    font-size: 0.7rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+}
+
 /*
 .left{
   display: flex;
