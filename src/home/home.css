@@ -135,16 +135,11 @@
   }
 
   .header {
-    height: 22vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    text-align: center;
     align-items: center;
-    padding: 15% 0 1% 0;
-    overflow: hidden;
-    flex-shrink: 0;
+    padding-left: 0;
   }
 
   .header h2 {
@@ -158,11 +153,11 @@
     margin: 0 0.5rem;
   }
   .content {
-    padding: 0 10%;
-    height: 55vh;
+    padding: 0 5%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex: auto;
+    z-index: 2;
   }
   .mainText {
     padding: 0 3% 0 7%;
@@ -178,13 +173,13 @@
     text-align: left;
   }
   .footer {
-    height: 23vh;
+    max-height: 15vh;
+    height: auto;
     display: flex;
-    padding-top: 3rem; 
-    overflow: hidden;
+    flex: auto;
     font-size: 0.7rem;
     text-align: center;
-    flex-shrink: 0;
+    z-index: 1;
   }
 }
 
