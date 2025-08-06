@@ -118,6 +118,10 @@
     max-height: 100dvh;
   }
 
+  body {
+    position: fixed;
+  }
+
   .Home {
     display: flex;
     flex-direction: column;
