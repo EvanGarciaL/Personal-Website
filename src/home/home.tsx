@@ -17,7 +17,7 @@ function Header() {
 					</a>
 				</button>
 				<button>
-					<a href="">
+					<a href="mailto:evanglopez511@gmail.com">
 						<img src={mailIcon} alt="mail" />
 					</a>
 				</button>
@@ -36,35 +36,61 @@ function Header() {
 	);
 }
 
-function Intro() {
+function Sections() {
 	useRoot("rootEnd");
 	return (
-		<div className="content">
-			<div className="mainText">
-				<h2 style={{ fontFamily: "Fira Code" }}>{">>"} about</h2>
-				<p>
-					{" "}
-					Computer Science @ UCI.{" "}
-					<b>Obsessed with problem solving and tinkering with stuff.</b>{" "}
-					<br></br>
-					This website is one such example — learning react / javascript /
-					typescript to learn other frameworks and better develop API's.
-					Currently interested in <i>machine learning,</i>{" "}
-					<i>competitive programming,</i> <i>AI,</i> and{" "}
-					<i>fullstack development.</i>
-				</p>
-
-				<p>
-					{" "}
-					I also really like hackathons. {"<"}- (Problem Solving + Tinkering —
-					already won one!)
-				</p>
-
-				<p>Might also minor in Mathematics 🫡 (😥) </p>
-			</div>
+		<div id="content">
+			<About/>
+			<Skills/>
 		</div>
 	);
 }
+
+function About() {
+	return(
+		<div id="aboutText">
+			<h2 style={{ fontFamily: "Fira Code" }}>{">>"} about</h2>
+			<p>
+				{" "}
+				Computer Science @ UCI.{" "}
+				<b>Obsessed with problem solving and tinkering with stuff.</b>{" "}
+				<br></br>
+				This website is one such example — learning react / javascript /
+				typescript to learn other frameworks and better develop API's.
+				Currently interested in <i>machine learning,</i>{" "}
+				<i>competitive programming,</i> <i>AI,</i> and{" "}
+				<i>fullstack development.</i>
+			</p>
+
+			<p>
+				{" "}
+				I also really like hackathons. {"<"}- (Problem Solving + Tinkering —
+				already won one!)
+			</p>
+
+			<p>Might also minor in Mathematics 🫡 (😥) </p>
+		</div>
+	);
+}
+
+function Skills() {
+	return(
+		<div id="skillsText" >
+			<h2>
+				{">>"} skills
+			</h2>
+
+			<ul>
+				<li>Python</li>
+				<li>Javascript/TypeScript</li>
+				<li>React</li>
+				<li>C/C++</li>
+				<li>...</li>
+			</ul>
+		</div>
+ )
+}
+
 
 function Footer() {
 	return (
@@ -79,7 +105,6 @@ function Footer() {
 	);
 }
 
-// export default function Home({changeToPage}: {changeToPage: React.Dispatch<React.SetStateAction<string>>}) {
 export default function Home() {
 	useEffect(() => {
 		document.body.classList.add("Home");
@@ -90,21 +115,11 @@ export default function Home() {
 			document.title = "";
 		};
 	}, []);
-	// function handleButtonPress(){
-	//   changeToPage("Stock")
-	// }
-
-	// const button = (
-	//     <button
-	//     className="go"
-	//     onClick={handleButtonPress}>
-	//     </button>
-	// )
 
 	return (
 		<>
 			<Header />
-			<Intro />
+			<Sections />
 			<Footer />
 		</>
 	);
