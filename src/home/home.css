@@ -50,12 +50,12 @@
 }
 
 #content div:not(#aboutText) {
-	animation: linear animate-in-rest;
+	animation: linear animate-in-rest both;
 	animation-timeline: view();
 }
 
 #content div {
-	animation: linear animate-in-and-out;
+	animation: linear animate-in-and-out both;
 	animation-timeline: view();
 }
 
