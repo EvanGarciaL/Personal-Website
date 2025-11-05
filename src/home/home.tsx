@@ -97,7 +97,7 @@ function Footer() {
 		<footer className="footer">
 			<p>
 				Icons by{" "}
-				<a target="_blank" href="https://icons8.com/">
+				<a target="_blank" rel="noopener noreferrer" href="https://icons8.com/">
 					Icons8
 				</a>
 			</p>
