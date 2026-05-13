@@ -15,3 +15,9 @@ export function useRoot(id : string) {
   },[root?.classList, id]);
 
 }
+
+export function useAxisY() {
+  useEffect(() =>{
+    console.log(window.scrollY);
+  },[window.scrollY])
+}

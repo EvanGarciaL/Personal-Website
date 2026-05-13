@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect , useState, useRef} from "react";
 import { useRoot } from "../const";
 import "./home.css";
 import homeIcon from "../assets/home-100.png";
@@ -40,35 +40,30 @@ function Sections() {
 	useRoot("rootEnd");
 	return (
 		<div id="content">
-			<About/>
+			<Intro/>
 			<Skills/>
 		</div>
 	);
 }
 
-function About() {
+function Intro() {
 	return(
-		<div id="aboutText">
-			<h2 style={{ fontFamily: "Fira Code" }}>{">>"} about</h2>
+		<div id="introText">
+			<h2 style={{ fontFamily: "Fira Code" }}>{">>"} intro</h2>
 			<p>
-				{" "}
-				Computer Science @ UCI.{" "}
-				<b>Obsessed with problem solving and tinkering with stuff.</b>{" "}
+				{" "} Computer Science @ UCI. {" "}
+				<b>Obsessed with problem solving and making small projects.</b>{" "}
 				<br></br>
-				This website is one such example — learning react / javascript /
-				typescript to learn other frameworks and better develop API's.
-				Currently interested in <i>machine learning,</i>{" "}
-				<i>competitive programming,</i> <i>AI,</i> and{" "}
-				<i>fullstack development.</i>
+				This website is just one example — hopefully you'll like it!
+				<br></br>
+				Currently interested in <i>machine learning, </i>
+				<i>competitive programming, </i>
+				<i>fullstack development,</i> and <i>the intersection between math and CS.</i>
 			</p>
 
 			<p>
-				{" "}
-				I also really like hackathons. {"<"}- (Problem Solving + Tinkering —
-				already won one!)
 			</p>
 
-			<p>Might also minor in Mathematics 🫡 (😥) </p>
 		</div>
 	);
 }
@@ -81,11 +76,6 @@ function Skills() {
 			</h2>
 
 			<ul>
-				<li>Python</li>
-				<li>Javascript/TypeScript</li>
-				<li>React</li>
-				<li>C/C++</li>
-				<li>...</li>
 			</ul>
 		</div>
  )
@@ -115,8 +105,7 @@ export default function Home() {
 			document.title = "";
 		};
 	}, []);
-
-	return (
+		return (
 		<>
 			<Header />
 			<Sections />

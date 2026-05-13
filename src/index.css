@@ -23,6 +23,7 @@
   grid-template-columns: 1fr 5fr;
   height: max-content;
   min-height: 100dvh;
+  margin: 0 20rem;
   box-sizing: border-box;
   background-color: #000000;
 }
