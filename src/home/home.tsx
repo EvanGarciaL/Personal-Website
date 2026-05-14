@@ -1,4 +1,4 @@
-import { useEffect , useState, useRef} from "react";
+import { useEffect } from "react";
 import { useRoot } from "../const";
 import "./home.css";
 import homeIcon from "../assets/home-100.png";
